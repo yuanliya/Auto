@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <BarCode>
+    <Item Name="条码左偏移" Value="296" />
+    <Item Name="条码上偏移" Value="52" />
+    <Item Name="条码高度"   Value="96" />
+    <Item Name="模块宽度"   Value="3" />
+    <Item Name="字符宽度"   Value="30" />
+    <Item Name="字符高度"   Value="20" />
+    <Item Name="行间距"     Value="8" />
+  </BarCode>
+</Configuration>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModuleInfo>
+  <Modules ModuleTag="101" ModuleName="入库管理">
+    <Item ModuleTag="100" ParentTag="" ModuleName="入库管理" Enabled="1" Permissions="11" />
+    <Item ModuleTag="101" ParentTag="100" ModuleName="入库管理" Enabled="1" Permissions="11" />
+    <Item ModuleTag="102" ParentTag="100" ModuleName="入库管理" Enabled="1" Permissions="11" />
+    <Item ModuleTag="103" ParentTag="100" ModuleName="入库管理" Enabled="1" Permissions="11" />
+    <Item ModuleTag="104" ParentTag="100" ModuleName="入库管理" Enabled="1" Permissions="11" />
+  </Modules>
+</ModuleInfo>
+

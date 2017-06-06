@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<MySettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SComm>
+    <Item Tag="主控串口" Name="COM1" Baud="115200" DataBits="8" StopBits="1" Parity="None" />
+    <Item Tag="LED串口"  Name="COM2" Baud="115200" DataBits="8" StopBits="1" Parity="None" />
+    <Item Tag="盘库串口" Name="COM3" Baud="19200"  DataBits="7" StopBits="1" Parity="None" />
+  </SComm>
+</MySettings>

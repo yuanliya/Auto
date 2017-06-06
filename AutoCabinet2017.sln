@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoCabinet2017", "AutoCabinet2017\AutoCabinet2017.csproj", "{658C6ADC-5DD2-4CEF-ACF0-9D255061101E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZY.EntityFrameWork", "ZY.EntityFrameWork\ZY.EntityFrameWork.csproj", "{05C531A2-6812-4763-9C8D-C819A0ED4C79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8BE03398-A9F5-432E-9A6F-7883A38D2244}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{1ACECFF2-0E4F-45A1-B594-1BEC5E13C77E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetService", "NetService\NetService.csproj", "{8D3B0346-EE84-48F7-8597-231F3941F3F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modbus", "Modbus\Modbus.csproj", "{E347A340-F9AB-448D-909F-35EE0FE7F731}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{658C6ADC-5DD2-4CEF-ACF0-9D255061101E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{658C6ADC-5DD2-4CEF-ACF0-9D255061101E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{658C6ADC-5DD2-4CEF-ACF0-9D255061101E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{658C6ADC-5DD2-4CEF-ACF0-9D255061101E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05C531A2-6812-4763-9C8D-C819A0ED4C79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05C531A2-6812-4763-9C8D-C819A0ED4C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05C531A2-6812-4763-9C8D-C819A0ED4C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05C531A2-6812-4763-9C8D-C819A0ED4C79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ACECFF2-0E4F-45A1-B594-1BEC5E13C77E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ACECFF2-0E4F-45A1-B594-1BEC5E13C77E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ACECFF2-0E4F-45A1-B594-1BEC5E13C77E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ACECFF2-0E4F-45A1-B594-1BEC5E13C77E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D3B0346-EE84-48F7-8597-231F3941F3F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D3B0346-EE84-48F7-8597-231F3941F3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D3B0346-EE84-48F7-8597-231F3941F3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D3B0346-EE84-48F7-8597-231F3941F3F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E347A340-F9AB-448D-909F-35EE0FE7F731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E347A340-F9AB-448D-909F-35EE0FE7F731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E347A340-F9AB-448D-909F-35EE0FE7F731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E347A340-F9AB-448D-909F-35EE0FE7F731}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

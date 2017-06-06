@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<FieldToShowList>
+  <Field Name ="ArvID">
+    <Value>档案编号,1,1,1</Value>
+  </Field>
+  <Field Name="ArvTitle">
+    <Value>档案名称,1,1,1</Value>
+  </Field>
+  <Field Name="ArvBoxID">
+    <Value>档案盒编号,1,1,0</Value>
+  </Field>
+  <Field Name="ArvBoxTitle">
+    <Value>档案盒名称,1,1,0</Value>
+  </Field>
+  <Field Name="ArvUnit">
+    <Value>部门分类,1,1,1</Value>
+  </Field>
+  <Field Name="ArvType">
+    <Value>档案类型,1,1,1</Value>
+  </Field>
+  <Field Name="ArvYear">
+    <Value>所属年度,1,1,1</Value>
+  </Field>
+  <Field Name="LabelID">
+    <Value>条码ID,1,1,0</Value>
+  </Field>
+  <Field Name="ArvStatus">
+    <Value>档案状态,0,0,0</Value>
+  </Field>
+  <Field Name="Edoc">
+    <Value>电子档案,0,0,0</Value>
+  </Field>
+  <Field Name="Rsv2">
+    <Value>备用2,0,0,0</Value>
+  </Field>
+  <Field Name="Rsv3">
+    <Value>备用3,0,0,0</Value>
+  </Field>
+  <Field Name="Rsv4">
+    <Value>备用4,0,0,0</Value>
+  </Field>
+  <Field Name="Rsv5">
+    <Value>备用5,0,0,0</Value>
+  </Field>
+</FieldToShowList>

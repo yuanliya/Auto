@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{658C6ADC-5DD2-4CEF-ACF0-9D255061101E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoCabinet2017</RootNamespace>
+    <AssemblyName>AutoCabinet2017</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AutoCabinet2017.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v15.2.UI, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v15.2.Core, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v15.2.Drawing, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v15.2.Core, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPdfViewer.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\Command.cs" />
+    <Compile Include="Controller\CommandExceptionEventArgs.cs" />
+    <Compile Include="Controller\CommandInvoker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\HZKController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\Monitor.cs" />
+    <Compile Include="Controller\SignalController.cs" />
+    <Compile Include="Helper\CommonHelper.cs" />
+    <Compile Include="Helper\ExtensionMethod\AuthHelper.cs" />
+    <Compile Include="Helper\CommondHelper.cs" />
+    <Compile Include="Helper\ExtensionMethod\ControlComponentHelper.cs" />
+    <Compile Include="Helper\GridCheckMarksSelection.cs" />
+    <Compile Include="Helper\GridControlHelper.cs" />
+    <Compile Include="Helper\GridRadioGroupColumnHelper.cs" />
+    <Compile Include="Helper\LinqHelper.cs" />
+    <Compile Include="Helper\MyCache.cs" />
+    <Compile Include="Helper\PageManager.cs" />
+    <Compile Include="Helper\PropertyHelper.cs" />
+    <Compile Include="Helper\QueryHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\APP\FormAppMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\APP\FormAppMain.Designer.cs">
+      <DependentUpon>FormAppMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\APP\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\APP\FormLogin.designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomWaitiing\LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomWaitiing\LoadingForm.designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DB\FormDBBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DB\FormDBBackup.designer.cs">
+      <DependentUpon>FormDBBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DB\FormDBRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DB\FormDBRestore.designer.cs">
+      <DependentUpon>FormDBRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DV\FormDVControlPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DV\FormDVControlPanel.Designer.cs">
+      <DependentUpon>FormDVControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DV\FormDVSerialPortConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DV\FormDVSerialPortConfig.designer.cs">
+      <DependentUpon>FormDVSerialPortConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DV\FormDVDeviceConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DV\FormDVDeviceConfig.designer.cs">
+      <DependentUpon>FormDVDeviceConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EF\FormEFArvInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EF\FormEFArvInfo.Designer.cs">
+      <DependentUpon>FormEFArvInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EF\FormEFArvBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EF\FormEFArvBox.Designer.cs">
+      <DependentUpon>FormEFArvBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EF\FormEFDeviceInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EF\FormEFDeviceInfo.Designer.cs">
+      <DependentUpon>FormEFDeviceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EF\FormEFDataDictInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EF\FormEFDataDictInfo.Designer.cs">
+      <DependentUpon>FormEFDataDictInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EF\FormEFRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EF\FormEFRole.Designer.cs">
+      <DependentUpon>FormEFRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EF\FormEFUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EF\FormEFUserList.Designer.cs">
+      <DependentUpon>FormEFUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EF\FormEFUserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EF\FormEFUserEdit.Designer.cs">
+      <DependentUpon>FormEFUserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EF\FormEFPassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EF\FormEFPassWord.designer.cs">
+      <DependentUpon>FormEFPassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FM\FormFMFieldCfg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FM\FormFMFieldCfg.designer.cs">
+      <DependentUpon>FormFMFieldCfg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FM\FormFMDataDict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FM\FormFMDataDict.designer.cs">
+      <DependentUpon>FormFMDataDict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OP\FormOPArvCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OP\FormOPArvCheck.designer.cs">
+      <DependentUpon>FormOPArvCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OP\FormOPArvIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OP\FormOPArvIn.Designer.cs">
+      <DependentUpon>FormOPArvIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OP\FormOPArvLend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OP\FormOPArvLend.Designer.cs">
+      <DependentUpon>FormOPArvLend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OP\FormOPArvMove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OP\FormOPArvMove.Designer.cs">
+      <DependentUpon>FormOPArvMove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OP\FormOPArvReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OP\FormOPArvReturn.Designer.cs">
+      <DependentUpon>FormOPArvReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OP\FormOPArvOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OP\FormOPArvOut.Designer.cs">
+      <DependentUpon>FormOPArvOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PB\FormPBExcelImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PB\FormPBExcelImport.Designer.cs">
+      <DependentUpon>FormPBExcelImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PB\FormPBExcelShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PB\FormPBExcelShow.Designer.cs">
+      <DependentUpon>FormPBExcelShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PB\FormPBFileSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PB\FormPBFileSelect.Designer.cs">
+      <DependentUpon>FormPBFileSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PB\FormPBPrinter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PB\FormPBPrinter.designer.cs">
+      <DependentUpon>FormPBPrinter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PREV\FormExcelPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PREV\FormExcelPreview.Designer.cs">
+      <DependentUpon>FormExcelPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PREV\FormPdfPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PREV\FormPdfPreview.Designer.cs">
+      <DependentUpon>FormPdfPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PREV\FormWordPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PREV\FormWordPreview.Designer.cs">
+      <DependentUpon>FormWordPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RP\FormRPQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RP\FormRPQuery.Designer.cs">
+      <DependentUpon>FormRPQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RP\FormRPStatics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RP\FormRPStatics.Designer.cs">
+      <DependentUpon>FormRPStatics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SY\FormSYLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SY\FormSYLog.Designer.cs">
+      <DependentUpon>FormSYLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SY\FormSYRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SY\FormSYRole.designer.cs">
+      <DependentUpon>FormSYRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SY\FormSYUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SY\FormSYUser.Designer.cs">
+      <DependentUpon>FormSYUser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\CustomWaitiing\LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DV\FormDVControlPanel.resx">
+      <DependentUpon>FormDVControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EF\FormEFRole.resx">
+      <DependentUpon>FormEFRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EF\FormEFUserList.resx">
+      <DependentUpon>FormEFUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EF\FormEFUserEdit.resx">
+      <DependentUpon>FormEFUserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EF\FormEFPassWord.resx">
+      <DependentUpon>FormEFPassWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OP\FormOPArvCheck.resx">
+      <DependentUpon>FormOPArvCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OP\FormOPArvMove.resx">
+      <DependentUpon>FormOPArvMove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OP\FormOPArvReturn.resx">
+      <DependentUpon>FormOPArvReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RP\FormRPQuery.resx">
+      <DependentUpon>FormRPQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RP\FormRPStatics.resx">
+      <DependentUpon>FormRPStatics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SY\FormSYLog.resx">
+      <DependentUpon>FormSYLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\APP\FormAppMain.resx">
+      <DependentUpon>FormAppMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\APP\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DB\FormDBBackup.resx">
+      <DependentUpon>FormDBBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DB\FormDBRestore.resx">
+      <DependentUpon>FormDBRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DV\FormDVSerialPortConfig.resx">
+      <DependentUpon>FormDVSerialPortConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DV\FormDVDeviceConfig.resx">
+      <DependentUpon>FormDVDeviceConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EF\FormEFArvInfo.resx">
+      <DependentUpon>FormEFArvInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EF\FormEFArvBox.resx">
+      <DependentUpon>FormEFArvBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EF\FormEFDataDictInfo.resx">
+      <DependentUpon>FormEFDataDictInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EF\FormEFDeviceInfo.resx">
+      <DependentUpon>FormEFDeviceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FM\FormFMFieldCfg.resx">
+      <DependentUpon>FormFMFieldCfg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FM\FormFMDataDict.resx">
+      <DependentUpon>FormFMDataDict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OP\FormOPArvIn.resx">
+      <DependentUpon>FormOPArvIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OP\FormOPArvLend.resx">
+      <DependentUpon>FormOPArvLend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OP\FormOPArvOut.resx">
+      <DependentUpon>FormOPArvOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PB\FormPBExcelImport.resx">
+      <DependentUpon>FormPBExcelImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PB\FormPBExcelShow.resx">
+      <DependentUpon>FormPBExcelShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PB\FormPBFileSelect.resx">
+      <DependentUpon>FormPBFileSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PB\FormPBPrinter.resx">
+      <DependentUpon>FormPBPrinter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PREV\FormExcelPreview.resx">
+      <DependentUpon>FormExcelPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PREV\FormPdfPreview.resx">
+      <DependentUpon>FormPdfPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PREV\FormWordPreview.resx">
+      <DependentUpon>FormWordPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SY\FormSYRole.resx">
+      <DependentUpon>FormSYRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SY\FormSYUser.resx">
+      <DependentUpon>FormSYUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modbus\Modbus.csproj">
+      <Project>{e347a340-f9ab-448d-909f-35ee0fe7f731}</Project>
+      <Name>Modbus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetService\NetService.csproj">
+      <Project>{8d3b0346-ee84-48f7-8597-231f3941f3f3}</Project>
+      <Name>NetService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{1acecff2-0e4f-45a1-b594-1bec5e13c77e}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZY.EntityFrameWork\ZY.EntityFrameWork.csproj">
+      <Project>{05c531a2-6812-4763-9c8d-c819a0ed4c79}</Project>
+      <Name>ZY.EntityFrameWork</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B15.bmp" />
+    <None Include="Resources\BtnOrigin.bmp" />
+    <None Include="Resources\BtnPressed.bmp" />
+    <None Include="Resources\BtnUnused.bmp" />
+    <None Include="Resources\add_16x16.png" />
+    <None Include="Resources\add_32x32.png" />
+    <None Include="Resources\editname_16x16.png" />
+    <None Include="Resources\editname_32x32.png" />
+    <None Include="Resources\delete_16x16.png" />
+    <None Include="Resources\delete_32x32.png" />
+    <None Include="Resources\loadtheme_16x16.png" />
+    <None Include="Resources\loadtheme_16x161.png" />
+    <None Include="Resources\loadtheme_32x32.png" />
+    <None Include="Resources\converttorange_16x16.png" />
+    <None Include="Resources\converttorange_32x32.png" />
+    <None Include="Resources\lookup&amp;reference_16x16.png" />
+    <None Include="Resources\lookup&amp;reference_32x32.png" />
+    <None Include="Resources\indentincrease_16x16.png" />
+    <None Include="Resources\indentincrease_32x32.png" />
+    <None Include="Resources\apply_16x16.png" />
+    <None Include="Resources\apply_32x32.png" />
+    <None Include="Resources\cancel_16x16.png" />
+    <None Include="Resources\cancel_32x32.png" />
+    <Content Include="Resources\find.png" />
+    <None Include="Resources\find2.png" />
+    <None Include="Resources\find32x32.png" />
+    <Content Include="XML\BarCodeSettings.xml" />
+    <Content Include="XML\DatabaseInfo.xml" />
+    <Content Include="XML\FieldToShowConfig.xml" />
+    <Content Include="XML\FieldType.xml" />
+    <Content Include="XML\MySettings.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。启用“NuGet 程序包还原”可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
