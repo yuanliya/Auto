@@ -60,9 +60,21 @@ namespace AutoCabinet2017.UI.OP
             }              
         }
 
+        private ArvReturnInfoDto InitReturnInfo()
+        {
+            ArvReturnInfoDto dto = new ArvReturnInfoDto
+            {
+                ReturnDate = dtReturnDate.DateTime,
+                Returner = txtReturner.Text,
+                ReturnerDept = cbxUnit.Text,
+                ReturnExecuter = txtAdmin.Text
+            };
+            return dto;
+        }
+
         private void toolReturn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            CallerFactory.Instance.GetService<IArvOpService>().ArvReturn(InitReturnInfo(), gcArvInfo.DataSource as List<ArvLendInfoDto>);
         }
     }
 }

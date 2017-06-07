@@ -31,14 +31,14 @@ namespace ZY.EntityFrameWork.Core.Model.Entity
         /// <summary>
         /// 档案类型
         /// </summary>
-        public ArchiveInfo ArchiveInfo { get; set; }
+        public virtual ArchiveInfo ArchiveInfo { get; set; }
 
         /// <summary>
         /// 所属年度
         /// </summary>
-        public ArvLendInfo ArvLend { get; set; }
+        public virtual ArvLendInfo ArvLend { get; set; }
 
-        public ArvReturnInfo ArvReturn { get; set; }
+        public virtual ArvReturnInfo ArvReturn { get; set; }
 
         // 属性要设为IsConcurrencyToken().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity); 
         // 时间戳作为乐观锁

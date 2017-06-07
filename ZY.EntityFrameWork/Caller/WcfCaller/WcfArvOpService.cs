@@ -229,7 +229,7 @@ namespace ZY.EntityFrameWork.Caller.WcfCaller
             return null;
         }
 
-        public int ArvReturn(ArvReturnInfoDto returnInfo, List<ArchiveInfoDto> arvInfos)
+        public int ArvReturn(ArvReturnInfoDto returnInfo, List<ArvLendInfoDto> arvInfos)
         {
             return this.Invoker.Invoke<int>(q => q.ArvReturn(returnInfo, arvInfos));
         }

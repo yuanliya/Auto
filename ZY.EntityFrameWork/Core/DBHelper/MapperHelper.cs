@@ -83,6 +83,11 @@ namespace ZY.EntityFrameWork.Core.DBHelper
 
                 CreateMap<ArvLendReturn, ArvLendInfoDto>().ForMember(dest => dest.ArchiveID, ori => ori.MapFrom(s => s.ArchiveInfo.ArvID)).ForMember(dest => dest.Lender, ori => ori.MapFrom(s => s.ArvLend.Lender)).ForMember(dest => dest.LendDate, ori => ori.MapFrom(s => s.ArvLend.LendDate)).ForMember(dest => dest.ReturnDeadline, ori => ori.MapFrom(s => s.ArvLend.ReturnDeadline)).ForMember(dest => dest.LendExecuter, ori => ori.MapFrom(s => s.ArvLend.LendExecuter));
 
+                CreateMap<ArvLendInfoDto, ArvLendReturn>();
+
+                CreateMap<ArvReturnInfoDto, ArvReturnInfo>();
+                CreateMap<ArvReturnInfo, ArvReturnInfoDto>();
+
                 // DTO与Model的结构和字段完全一致，直接调用CreateMap<Dto, Model>()完成映射
                 CreateMap<User, UserDto>().ForMember(dest => dest.RoleName, ori => ori.MapFrom(s => s.UserRole.RoleName))
                                           .ForMember(dest => dest.RoleLevel, ori => ori.MapFrom(s => s.UserRole.Level))

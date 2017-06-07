@@ -133,7 +133,7 @@ namespace ZY.EntityFrameWork.WcfSvcLib.Interface
         List<ArchiveInfoDto> GetArvLended();
 
         [OperationContract]
-        int ArvReturn(ArvReturnInfoDto returnInfo, List<ArchiveInfoDto> arvInfos);
+        int ArvReturn(ArvReturnInfoDto returnInfo, List<ArvLendInfoDto> arvInfos);
 
         #endregion
 

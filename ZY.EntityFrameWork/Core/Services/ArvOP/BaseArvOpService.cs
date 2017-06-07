@@ -392,15 +392,14 @@ namespace ZY.EntityFrameWork.Core.Services
             return arvLendReturnRepository.Find(q => q.ReturnID == null).ToList();
         }
 
-        public int ArvReturn(ArvReturnInfo returnInfo, List<ArchiveInfo> arvInfos)
+        public int ArvReturn(ArvReturnInfo returnInfo, List<ArvLendReturn> arvInfos)
         {
             arvInfos.ForEach(q =>
             {
-                q.ArvStatus = "在柜";
-                arvRepository.Update(q, false);
-                ArvReturnInfo info = returnInfo;
-                //info.ArvID = q.ArvID;                
-                returnRepository.Insert(returnInfo, false);               
+                ArvLendReturn item=arvLendReturnRepository.GetByKey(q.ID);
+                item.ArvReturn = returnInfo;
+                item.ArchiveInfo.ArvStatus = "在库";
+                arvLendReturnRepository.Update(item, false);
             });
             return Context.Commit();
         }
