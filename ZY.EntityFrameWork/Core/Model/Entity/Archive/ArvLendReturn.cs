@@ -24,7 +24,7 @@ namespace ZY.EntityFrameWork.Core.Model.Entity
         public string LendID { get; set; }
 
         /// <summary>
-        /// 所属部门
+        /// 归还表的ID
         /// </summary>
         public string ReturnID { get; set; }
 
