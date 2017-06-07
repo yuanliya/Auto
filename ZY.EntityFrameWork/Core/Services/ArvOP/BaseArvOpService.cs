@@ -388,7 +388,7 @@ namespace ZY.EntityFrameWork.Core.Services
 
         public List<ArvLendReturn> GetLendInfo()
         {
-            List<ArvLendReturn> list = arvLendReturnRepository.Find(q => q.ReturnID == null).ToList();
+            //List<ArvLendReturn> list = arvLendReturnRepository.Find(q => q.ReturnID == null).ToList();
             return arvLendReturnRepository.Find(q => q.ReturnID == null).ToList();
         }
 
