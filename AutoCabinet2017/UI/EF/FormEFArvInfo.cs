@@ -212,7 +212,8 @@ namespace AutoCabinet2017.UI.EF
         private void InitArchive(ArchiveInfoDto arch)
         {
             // 档案信息
-            arch.ArvID    = txtArvID.Text.Trim();
+            //arch.ArvID    = txtArvID.Text.Trim();
+            arch.ID = txtArvID.Text.Trim();
             arch.ArvTitle = txtArvTitle.Text.Trim();
             arch.ArvType  = cbxArvType.Text.Trim();
             arch.ArvUnit  = cbxArvUnit.Text.Trim();
@@ -272,7 +273,7 @@ namespace AutoCabinet2017.UI.EF
         void LoadArvInfo(ArchiveInfoDto arvCurrent)
         {
             // 档案信息
-            txtArvID.Text       = arvCurrent.ArvID;
+            txtArvID.Text       = arvCurrent.ID;// ArvID;
             txtArvTitle.Text    = arvCurrent.ArvTitle;          
             cbxArvType.Text     = arvCurrent.ArvType;
             cbxArvUnit.Text     = arvCurrent.ArvUnit;
@@ -300,7 +301,7 @@ namespace AutoCabinet2017.UI.EF
         private void LoadArvBox(ArvBoxDto arvBoxCurrent)
         {
             // 档案盒信息
-            txtArvBoxID.Text    = arvBoxCurrent.ArvBoxID;
+            txtArvBoxID.Text = arvBoxCurrent.ID;// ArvBoxID;
             txtArvBoxTitle.Text = arvBoxCurrent.ArvBoxTitle;
 
             // 存储位置

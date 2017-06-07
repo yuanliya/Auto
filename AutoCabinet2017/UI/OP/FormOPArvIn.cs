@@ -68,8 +68,8 @@ namespace AutoCabinet2017.UI.OP
             }
 
             // ID列不可见
-            string[] cols = new string[] { "ID" };
-            GridControlHelper.Instance.SetColumnInvisible(gvArvInfo, cols);
+            //string[] cols = new string[] { "ID" };
+            //GridControlHelper.Instance.SetColumnInvisible(gvArvInfo, cols);
 
             // 为表格加入控制列
             GridControlHelper.Instance.AddControlButton(gvArvInfo, controlButtons, gvArvInfo.Columns.Count);
@@ -283,7 +283,7 @@ namespace AutoCabinet2017.UI.OP
 
         private void UpdateInfo(string arvID)
         {
-            ArchiveInfoDto arv = arvList.First(q => q.ArvID == arvID);
+            ArchiveInfoDto arv = arvList.First(q => q.ID == arvID); //(q => q.ArvID == arvID);
             if (arv != null)
             {
                 arvList.Remove(arv);
@@ -383,7 +383,7 @@ namespace AutoCabinet2017.UI.OP
                 foreach (int index in gvArvInfo.GetSelectedRows())
                 {
                     //更新表格显示
-                    gvArvInfo.SetRowCellValue(index, "ArvBoxID", arvBoxDto.ArvBoxID);
+                    gvArvInfo.SetRowCellValue(index, "ArvBoxID", arvBoxDto.ID);//ArvBoxID);
                     gvArvInfo.SetRowCellValue(index, "ArvBoxTitle", arvBoxDto.ArvBoxTitle);
                     gvArvInfo.SetRowCellValue(index, "GroupNo", arvBoxDto.GroupNo);
                     gvArvInfo.SetRowCellValue(index, "LayerNo", arvBoxDto.LayerNo);
@@ -427,7 +427,7 @@ namespace AutoCabinet2017.UI.OP
                     // 获取当前表格中记录
                     BindingList<ArchiveInfoDto> bindingList = (BindingList<ArchiveInfoDto>)gcArvInfo.DataSource;
                     // 查找被修改的记录
-                    ArchiveInfoDto arv = bindingList.First(p => p.ArvID == arch.ArvID);
+                    ArchiveInfoDto arv = bindingList.First(p => p.ID == arch.ID);//(p => p.ArvID == arch.ArvID);
                     // 用新的记录替代原纪录，表格自动更新
                     bindingList[bindingList.IndexOf(arv)] = arch;
 

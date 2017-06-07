@@ -15,11 +15,12 @@ namespace ZY.EntityFrameWork.Core.Model.Dto
         public ArvBoxDto()
         {
             // 每个实体生成独一无二的ID
-            ID = Guid.NewGuid().ToString("N");
+            //ID = Guid.NewGuid().ToString("N");
         }
 
         [Display(Name = "档案盒编号")]
-        public string ArvBoxID { get; set; }
+        public override string ID { get; set; }
+       // public string ArvBoxID { get; set; }
 
         [Display(Name = "档案盒名称")]
         public string ArvBoxTitle { get; set; }

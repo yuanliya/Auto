@@ -11,6 +11,6 @@ namespace ZY.EntityFrameWork.Core.Model.Dto
     /// </summary>
     public class BaseDto
     {
-        public string ID { get; set; }
+        public virtual string ID { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace ZY.EntityFrameWork.Core.Model.Entity
         /// <summary>
         /// 档案盒ID
         /// </summary>
-        public string ArvBoxID { get; set; }
+      //  public string ArvBoxID { get; set; }
 
         /// <summary>
         /// 档案盒题名
