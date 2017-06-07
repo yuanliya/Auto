@@ -15,7 +15,7 @@ namespace ZY.EntityFrameWork.Core.Model.Dto
         public ArchiveInfoDto()
         {
             // 每个实体生成独一无二的ID
-            ID = Guid.NewGuid().ToString("N");
+          //  ID = Guid.NewGuid().ToString("N");
         }
 
         /// <summary>
