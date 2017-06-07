@@ -18,25 +18,28 @@ namespace ZY.EntityFrameWork.Core.Model.Entity
         public string ArvID { get; set; }
 
         /// <summary>
-        /// 档案名称
+        /// 档案借阅记录编号
         /// </summary>
         public string LendID { get; set; }
 
         /// <summary>
-        /// 归还表的ID
+        /// 档案归还记录编号
         /// </summary>
         public string ReturnID { get; set; }
 
         /// <summary>
-        /// 档案类型
+        /// 档案信息
         /// </summary>
         public ArchiveInfo ArchiveInfo { get; set; }
 
         /// <summary>
-        /// 所属年度
+        /// 档案借阅信息
         /// </summary>
         public ArvLendInfo ArvLend { get; set; }
 
+        /// <summary>
+        /// 档案归还信息
+        /// </summary>
         public ArvReturnInfo ArvReturn { get; set; }
 
         // 属性要设为IsConcurrencyToken().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity); 

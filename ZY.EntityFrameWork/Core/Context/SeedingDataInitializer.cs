@@ -51,7 +51,6 @@ namespace ZY.EntityFrameWork.Core.Context
 
             for (int i = 0; i < 6; i++)
             {
-                //ArchiveInfo info = new ArchiveInfo { ID = Guid.NewGuid().ToString("N"), ArvID = Convert.ToString(1000 + i), ArvStatus = "在档", CreateTime = DateTime.Today };
                 ArchiveInfo info = new ArchiveInfo { ID = Convert.ToString(1000 + i), ArvStatus = "在档", CreateTime = DateTime.Today };
                 context.Set<ArchiveInfo>().Add(info);
             }
@@ -60,8 +59,6 @@ namespace ZY.EntityFrameWork.Core.Context
             {
                 ArvBox info = new ArvBox 
                 {
-                    //ID = Guid.NewGuid().ToString("N"), 
-                    //ArvBoxID    = Convert.ToString(10000 + i), 
                     ID = Convert.ToString(10000 + i), 
                     ArvBoxTitle = "box" + i,
                     GroupNo     = i,

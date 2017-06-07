@@ -12,19 +12,11 @@ namespace ZY.EntityFrameWork.Core.Model.Dto
     /// </summary>
     public class ArchiveInfoDto : BaseDto
     {
-        public ArchiveInfoDto()
-        {
-            // 每个实体生成独一无二的ID
-          //  ID = Guid.NewGuid().ToString("N");
-        }
-
         /// <summary>
         /// 档案编号
         /// </summary>
         [Display(Name = "档案编号")]
         public override string ID { get; set; }
-        //[Display(Name = "档案编号")]
-        //public string ArvID { get; set; }
 
         /// <summary>
         /// 档案名称

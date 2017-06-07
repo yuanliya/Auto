@@ -354,29 +354,42 @@ namespace ZY.EntityFrameWork.Core.Services
             return arvRepository.Find(q => q.ArvStatus == "在柜").ToList();
         }
 
+        /// <summary>
+        /// 借阅操作
+        /// </summary>
+        /// <param name="lendInfo">借阅信息实体</param>
+        /// <param name="infos">借阅有关的档案信息实体</param>
+        /// <returns></returns>
         public int ArvLend(ArvLendInfo lendInfo, List<ArchiveInfo> infos)
         {
-            //List<ArchiveInfo> arvs = new List<ArchiveInfo>();
             infos.ForEach(q =>
             {
                 q.ArvStatus = "借出";
                
                 arvRepository.Update(q, false);
-                //ArchiveInfo arv = arvRepository.GetByKey(q.ID);
-                //arvs.Add(arv);
-                ArvLendReturn item=new ArvLendReturn{// 每个实体生成独一无二的ID
-            ID = Guid.NewGuid().ToString("N"),ArvID=q.ID,LendID=lendInfo.ID};
+
+                // 借阅归还关系中间表
+                ArvLendReturn item = new ArvLendReturn
+                {
+                    // 每个实体生成独一无二的ID
+                    ID = Guid.NewGuid().ToString("N"),
+                    ArvID  = q.ID,
+                    LendID = lendInfo.ID
+                };
+
                 arvLendReturnRepository.Insert(item,false);
             });
-            //lendInfo.ArchiveInfos = arvs;
-            
+
+            // 借阅信息表
             lendRepository.Insert(lendInfo, false);
+
             return Context.Commit();
         }
 
         #endregion
 
         #region 归还相关
+
         /// <summary>
         /// 查找被借阅的档案
         /// </summary>
@@ -386,24 +399,37 @@ namespace ZY.EntityFrameWork.Core.Services
             return arvRepository.Find(q => q.ArvStatus == "借出").ToList();
         }
 
+        /// <summary>
+        /// 查找所有借出档案记录
+        /// </summary>
+        /// <returns></returns>
         public List<ArvLendReturn> GetLendInfo()
         {
-            //List<ArvLendReturn> list = arvLendReturnRepository.Find(q => q.ReturnID == null).ToList();
             return arvLendReturnRepository.Find(q => q.ReturnID == null).ToList();
         }
 
+        /// <summary>
+        /// 归还操作
+        /// </summary>
+        /// <param name="returnInfo">归还信息实体</param>
+        /// <param name="arvInfos">归还有关的档案信息实体</param>
+        /// <returns></returns>
         public int ArvReturn(ArvReturnInfo returnInfo, List<ArchiveInfo> arvInfos)
         {
             arvInfos.ForEach(q =>
             {
-                q.ArvStatus = "在柜";
+                // 更新档案状态
+                q.ArvStatus = "在库";
                 arvRepository.Update(q, false);
-                ArvReturnInfo info = returnInfo;
-                //info.ArvID = q.ArvID;                
-                returnRepository.Insert(returnInfo, false);               
+
+                // 更新归还记录表
+                ArvReturnInfo info = returnInfo;          
+                returnRepository.Insert(returnInfo, false);
             });
+
             return Context.Commit();
         }
+
         #endregion
 
         #region 出柜相关
