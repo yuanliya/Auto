@@ -23,8 +23,6 @@ namespace ZY.EntityFrameWork.Core.Model.Dto
         // </summary>
         public string ArvID { get; set; }
 
-        public string ArchiveID { get; set; }
-
         [Display(Name = "借阅人")]
         // <summary>
         // 借阅人
@@ -53,8 +51,6 @@ namespace ZY.EntityFrameWork.Core.Model.Dto
         // <summary>
         // 借阅经办人
         // </summary>
-        public string LendExecuter { get; set; }
-
-        
+        public string LendExecuter { get; set; } 
     }
 }

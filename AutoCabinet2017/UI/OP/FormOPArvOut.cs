@@ -74,7 +74,7 @@ namespace AutoCabinet2017.UI.OP
 
         private void UpdateInfo(string arvID)
         {
-            ArchiveInfoDto arv = arvList.First(q => q.ArvID == arvID);
+            ArchiveInfoDto arv = arvList.First(q => q.ID == arvID); //(q => q.ArvID == arvID);
             if (arv != null)
             {
                 arvList.Remove(arv);

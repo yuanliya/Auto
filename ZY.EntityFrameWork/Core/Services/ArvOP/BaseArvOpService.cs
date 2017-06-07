@@ -70,7 +70,7 @@ namespace ZY.EntityFrameWork.Core.Services
         /// <returns>操作是否成功</returns>
         public int AddNewArvBox(ArvBox arvBox, bool isSave = true)
         {
-            if(arvBoxRepository.CheckExists(q=>q.ArvBoxID == arvBox.ArvBoxID))
+            if(arvBoxRepository.CheckExists(q=>q.ID == arvBox.ID))//(q=>q.ArvBoxID == arvBox.ArvBoxID))
             {
                 throw new Exception("试图添加档案盒编号重复的记录");
             }
@@ -87,7 +87,7 @@ namespace ZY.EntityFrameWork.Core.Services
         public int DeleteArvBox(ArvBox arvBox)
         {
             // 删除档案盒记录
-            return arvBoxRepository.Delete(arvBox.ArvBoxID);
+            return arvBoxRepository.Delete(arvBox.ID);// (arvBox.ArvBoxID);
         }
 
         /// <summary>
@@ -156,9 +156,9 @@ namespace ZY.EntityFrameWork.Core.Services
         public int Delete(List<ArchiveInfo> arvs)
         {
             // 提取实体集合中的主键
-            IEnumerable<string> ids = arvs.Select(q => q.ArvID);
+            IEnumerable<string> ids = arvs.Select(q => q.ID);//ArvID);
             // 删除所有主键对应的实体记录
-            return arvRepository.Delete(q => ids.Contains(q.ArvID));
+            return arvRepository.Delete(q => ids.Contains(q.ID));//ArvID));
 
             // 基于事务机理的操作
             //arvs.ForEach(q =>
@@ -245,13 +245,13 @@ namespace ZY.EntityFrameWork.Core.Services
         public int InToStorage(ArchiveInfo arv, ArvBox arvBox)
         {
             // 档案查重
-            if (arvRepository.CheckExists(q => q.ArvID == arv.ArvID))
+            if (arvRepository.CheckExists(q => q.ID == arv.ID))//(q => q.ArvID == arv.ArvID))
             {
                 throw new Exception("试图添加档案编号重复的记录");
             }
 
             // 档案盒查重
-            ArvBox box = arvBoxRepository.FindSingle(q => q.ArvBoxID == arvBox.ArvBoxID);
+            ArvBox box = arvBoxRepository.FindSingle(q => q.ID == arvBox.ID); //(q => q.ArvBoxID == arvBox.ArvBoxID);
             if (box == null)
             {
                 // 新的档案盒
@@ -282,7 +282,7 @@ namespace ZY.EntityFrameWork.Core.Services
         public int InToStorage(List<ArchiveInfo> arvs)
         {
             arvs.ForEach(q =>{
-                if (arvRepository.CheckExists(t => q.ArvID == t.ArvID))
+                if (arvRepository.CheckExists(t => q.ID == t.ID))//(t => q.ArvID == t.ArvID))
                 {
                     throw new Exception("试图添加档案编号重复的记录");
                 }
@@ -302,16 +302,16 @@ namespace ZY.EntityFrameWork.Core.Services
         /// <returns></returns>
         public int UpdateArvInfo(ArchiveInfo arv,ArvBox arvBox=null)
         {
-            if((arvBox != null) && (arvBox.ArvBoxID != null))
+            if((arvBox != null) && (arvBox.ID != null))//ArvBoxID != null))
             {
-                ArvBox box = arvBoxRepository.FindSingle(q => q.ArvBoxID == arvBox.ArvBoxID);
+                ArvBox box = arvBoxRepository.FindSingle(q => q.ID == arvBox.ID); //(q => q.ArvBoxID == arvBox.ArvBoxID);
                 if (box == null)
                 {
                     // 新的档案盒
                     AddNewArvBox(arvBox, false);
                 }
 
-                arv.ArvBoxID = arvBox.ArvBoxID;
+                arv.ArvBoxID = arvBox.ID;// ArvBoxID;
             }
             
             // 更新数据库记录
@@ -327,14 +327,14 @@ namespace ZY.EntityFrameWork.Core.Services
         {
             if(arvBox!=null)
             {
-                ArvBox box = arvBoxRepository.FindSingle(q => q.ArvBoxID == arvBox.ArvBoxID);
+                ArvBox box = arvBoxRepository.FindSingle(q => q.ID == arvBox.ID); //(q => q.ArvBoxID == arvBox.ArvBoxID);
                 if (box == null)
                 {
                     // 新的档案盒
                     AddNewArvBox(arvBox, false);
                 }
                 // 关联档案和所属档案盒
-                arvs.ForEach(q => q.ArvBoxID = arvBox.ArvBoxID);
+                arvs.ForEach(q => q.ArvBoxID = arvBox.ID);//ArvBoxID);
             }
             
            
@@ -414,7 +414,7 @@ namespace ZY.EntityFrameWork.Core.Services
             {
                 q.ArvStatus = "在库";
                 OutCabInfo outModel = outInfo;
-                outModel.ArvID = q.ArvID;
+                outModel.ArvID = q.ID;// ArvID;
                 arvRepository.Update(q, false);
                 outCabRepository.Insert(outModel, false);
             });

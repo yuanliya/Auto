@@ -22,7 +22,9 @@ namespace ZY.EntityFrameWork.Core.Model.Dto
         /// 档案编号
         /// </summary>
         [Display(Name = "档案编号")]
-        public string ArvID { get; set; }
+        public override string ID { get; set; }
+        //[Display(Name = "档案编号")]
+        //public string ArvID { get; set; }
 
         /// <summary>
         /// 档案名称

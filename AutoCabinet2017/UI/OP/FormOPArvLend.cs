@@ -230,7 +230,7 @@ namespace AutoCabinet2017.UI.OP
             // 取消该条记录在借阅明细表中的选中状态
             for (int i = 0; i < gvArvInfo.RowCount; i++)
             {
-                if (gvArvInfo.GetRowCellValue(i, gvArvInfo.Columns[0]).ToString() == info.ArvID)
+                if (gvArvInfo.GetRowCellValue(i, gvArvInfo.Columns[0]).ToString() == info.ID)//ArvID)
                 {
                     // 档案信息表中取消“CheckBox”选中状态，同时引起表格的“SelectionChanged”事件
                     gvArvInfo.UnselectRow(i);

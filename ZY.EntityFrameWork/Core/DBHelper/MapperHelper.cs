@@ -60,7 +60,8 @@ namespace ZY.EntityFrameWork.Core.DBHelper
                 CreateMap<ArchiveInfo, ArchiveInfoDto>().ForMember(dest => dest.GroupNo, ori => ori.MapFrom(s => s.ArvBox.GroupNo))
                      .ForMember(dest => dest.LayerNo, ori => ori.MapFrom(s => s.ArvBox.LayerNo))
                      .ForMember(dest => dest.CellNo, ori => ori.MapFrom(s => s.ArvBox.CellNo))
-                     .ForMember(dest => dest.ArvBoxID, ori => ori.MapFrom(s => s.ArvBox.ArvBoxID))           
+                    // .ForMember(dest => dest.ArvBoxID, ori => ori.MapFrom(s => s.ArvBox.ArvBoxID))           
+                     .ForMember(dest => dest.ID, ori => ori.MapFrom(s => s.ArvBox.ID))           
                      .ForMember(dest => dest.ArvBoxTitle, ori => ori.MapFrom(s => s.ArvBox.ArvBoxTitle));
                 // 映射外键
                 CreateMap<ArchiveInfoDto, ArchiveInfo>().ForMember(dest => dest.ArvBoxID, ori => ori.MapFrom(s => s.ArvBoxID));
@@ -77,11 +78,10 @@ namespace ZY.EntityFrameWork.Core.DBHelper
                 CreateMap<ArvBoxDto, ArvBox>();
                 CreateMap<ArvBox, ArvBoxDto>();
 
-
                 CreateMap<ArvLendInfo, ArvLendInfoDto>();//.ForMember(dest=>dest.ArchiveID,ori=>ori.MapFrom(s=>s.ArchiveInfo.ArvID));
                 CreateMap<ArvLendInfoDto, ArvLendInfo>();
 
-                CreateMap<ArvLendReturn, ArvLendInfoDto>().ForMember(dest => dest.ArchiveID, ori => ori.MapFrom(s => s.ArchiveInfo.ArvID)).ForMember(dest => dest.Lender, ori => ori.MapFrom(s => s.ArvLend.Lender)).ForMember(dest => dest.LendDate, ori => ori.MapFrom(s => s.ArvLend.LendDate)).ForMember(dest => dest.ReturnDeadline, ori => ori.MapFrom(s => s.ArvLend.ReturnDeadline)).ForMember(dest => dest.LendExecuter, ori => ori.MapFrom(s => s.ArvLend.LendExecuter));
+               // CreateMap<ArvLendReturn, ArvLendInfoDto>().ForMember(dest => dest.ArchiveID, ori => ori.MapFrom(s => s.ArchiveInfo.ArvID)).ForMember(dest => dest.Lender, ori => ori.MapFrom(s => s.ArvLend.Lender)).ForMember(dest => dest.LendDate, ori => ori.MapFrom(s => s.ArvLend.LendDate)).ForMember(dest => dest.ReturnDeadline, ori => ori.MapFrom(s => s.ArvLend.ReturnDeadline)).ForMember(dest => dest.LendExecuter, ori => ori.MapFrom(s => s.ArvLend.LendExecuter));
 
                 // DTO与Model的结构和字段完全一致，直接调用CreateMap<Dto, Model>()完成映射
                 CreateMap<User, UserDto>().ForMember(dest => dest.RoleName, ori => ori.MapFrom(s => s.UserRole.RoleName))
