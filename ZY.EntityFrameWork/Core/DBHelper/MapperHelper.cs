@@ -95,6 +95,11 @@ namespace ZY.EntityFrameWork.Core.DBHelper
 
                 CreateMap<ArvLendInfoDto, ArvLendReturn>();              
 
+                CreateMap<ArvLendInfoDto, ArvLendReturn>();
+
+                CreateMap<ArvReturnInfoDto, ArvReturnInfo>();
+                CreateMap<ArvReturnInfo, ArvReturnInfoDto>();
+
                 // DTO与Model的结构和字段完全一致，直接调用CreateMap<Dto, Model>()完成映射
                 CreateMap<User, UserDto>().ForMember(dest => dest.RoleName, ori => ori.MapFrom(s => s.UserRole.RoleName))
                                           .ForMember(dest => dest.RoleLevel, ori => ori.MapFrom(s => s.UserRole.Level))
