@@ -229,32 +229,28 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(1880, 46);
+            this.barDockControlTop.Size = new System.Drawing.Size(1253, 31);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 1020);
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(1880, 0);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 680);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1253, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 46);
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 974);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 31);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 649);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1880, 46);
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 974);
+            this.barDockControlRight.Location = new System.Drawing.Point(1253, 31);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 649);
             // 
             // panelSearch
             // 
@@ -271,77 +267,72 @@
             this.panelSearch.Controls.Add(this.lblArvLender);
             this.panelSearch.Controls.Add(this.lblArvTitle);
             this.panelSearch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSearch.Location = new System.Drawing.Point(0, 46);
-            this.panelSearch.Margin = new System.Windows.Forms.Padding(36, 6, 36, 6);
+            this.panelSearch.Location = new System.Drawing.Point(0, 31);
+            this.panelSearch.Margin = new System.Windows.Forms.Padding(24, 4, 24, 4);
             this.panelSearch.Name = "panelSearch";
-            this.panelSearch.Size = new System.Drawing.Size(1880, 87);
+            this.panelSearch.Size = new System.Drawing.Size(1253, 58);
             this.panelSearch.TabIndex = 72;
             // 
             // dtToDate
             // 
             this.dtToDate.EditValue = null;
-            this.dtToDate.Location = new System.Drawing.Point(1317, 24);
-            this.dtToDate.Margin = new System.Windows.Forms.Padding(4);
+            this.dtToDate.Location = new System.Drawing.Point(878, 16);
             this.dtToDate.MenuManager = this.barManager1;
             this.dtToDate.Name = "dtToDate";
             this.dtToDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtToDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtToDate.Size = new System.Drawing.Size(168, 28);
+            this.dtToDate.Size = new System.Drawing.Size(112, 20);
             this.dtToDate.TabIndex = 102;
             // 
             // dtFromDate
             // 
             this.dtFromDate.EditValue = null;
-            this.dtFromDate.Location = new System.Drawing.Point(1068, 24);
-            this.dtFromDate.Margin = new System.Windows.Forms.Padding(4);
+            this.dtFromDate.Location = new System.Drawing.Point(712, 16);
             this.dtFromDate.MenuManager = this.barManager1;
             this.dtFromDate.Name = "dtFromDate";
             this.dtFromDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtFromDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtFromDate.Size = new System.Drawing.Size(168, 28);
+            this.dtFromDate.Size = new System.Drawing.Size(112, 20);
             this.dtFromDate.TabIndex = 101;
             // 
             // cbTimeSpan
             // 
-            this.cbTimeSpan.Location = new System.Drawing.Point(946, 26);
-            this.cbTimeSpan.Margin = new System.Windows.Forms.Padding(4);
+            this.cbTimeSpan.Location = new System.Drawing.Point(631, 17);
             this.cbTimeSpan.MenuManager = this.barManager1;
             this.cbTimeSpan.Name = "cbTimeSpan";
             this.cbTimeSpan.Properties.Caption = "借阅时间";
-            this.cbTimeSpan.Size = new System.Drawing.Size(112, 26);
+            this.cbTimeSpan.Size = new System.Drawing.Size(75, 19);
             this.cbTimeSpan.TabIndex = 100;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1246, 30);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(831, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 18);
+            this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 96;
             this.label3.Text = "------";
             // 
             // cbxArvType
             // 
-            this.cbxArvType.Location = new System.Drawing.Point(434, 26);
-            this.cbxArvType.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxArvType.Location = new System.Drawing.Point(289, 17);
             this.cbxArvType.Name = "cbxArvType";
             this.cbxArvType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbxArvType.Size = new System.Drawing.Size(150, 28);
+            this.cbxArvType.Size = new System.Drawing.Size(100, 20);
             this.cbxArvType.TabIndex = 95;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(344, 32);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(229, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 18);
+            this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 94;
             this.label1.Tag = "ArvType";
             this.label1.Text = "档案类别";
@@ -349,18 +340,18 @@
             // btnAdvanced
             // 
             this.btnAdvanced.Image = global::AutoCabinet2017.Properties.Resources.find32x32;
-            this.btnAdvanced.Location = new System.Drawing.Point(1515, 12);
-            this.btnAdvanced.Margin = new System.Windows.Forms.Padding(6);
+            this.btnAdvanced.Location = new System.Drawing.Point(1010, 8);
+            this.btnAdvanced.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdvanced.Name = "btnAdvanced";
-            this.btnAdvanced.Size = new System.Drawing.Size(135, 57);
+            this.btnAdvanced.Size = new System.Drawing.Size(90, 38);
             this.btnAdvanced.TabIndex = 93;
             this.btnAdvanced.Text = "搜索";
             // 
             // txtArvBoxTitle
             // 
             this.txtArvBoxTitle.EnterMoveNextControl = true;
-            this.txtArvBoxTitle.Location = new System.Drawing.Point(716, 26);
-            this.txtArvBoxTitle.Margin = new System.Windows.Forms.Padding(6);
+            this.txtArvBoxTitle.Location = new System.Drawing.Point(477, 17);
+            this.txtArvBoxTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtArvBoxTitle.Name = "txtArvBoxTitle";
             this.txtArvBoxTitle.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow;
             this.txtArvBoxTitle.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -369,15 +360,15 @@
             this.txtArvBoxTitle.Properties.AppearanceReadOnly.Options.UseBackColor = true;
             this.txtArvBoxTitle.Properties.AppearanceReadOnly.Options.UseBorderColor = true;
             this.txtArvBoxTitle.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.txtArvBoxTitle.Size = new System.Drawing.Size(182, 28);
+            this.txtArvBoxTitle.Size = new System.Drawing.Size(121, 20);
             this.txtArvBoxTitle.TabIndex = 92;
             this.txtArvBoxTitle.Tag = "ArvBoxTitle";
             // 
             // txtArvTitle
             // 
             this.txtArvTitle.EnterMoveNextControl = true;
-            this.txtArvTitle.Location = new System.Drawing.Point(112, 26);
-            this.txtArvTitle.Margin = new System.Windows.Forms.Padding(6);
+            this.txtArvTitle.Location = new System.Drawing.Point(75, 17);
+            this.txtArvTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtArvTitle.Name = "txtArvTitle";
             this.txtArvTitle.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow;
             this.txtArvTitle.Properties.AppearanceFocused.Options.UseBackColor = true;
@@ -386,17 +377,17 @@
             this.txtArvTitle.Properties.AppearanceReadOnly.Options.UseBackColor = true;
             this.txtArvTitle.Properties.AppearanceReadOnly.Options.UseBorderColor = true;
             this.txtArvTitle.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.txtArvTitle.Size = new System.Drawing.Size(182, 28);
+            this.txtArvTitle.Size = new System.Drawing.Size(121, 20);
             this.txtArvTitle.TabIndex = 91;
             this.txtArvTitle.Tag = "ArvTitle";
             // 
             // lblArvLender
             // 
             this.lblArvLender.AutoSize = true;
-            this.lblArvLender.Location = new System.Drawing.Point(642, 32);
-            this.lblArvLender.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblArvLender.Location = new System.Drawing.Point(428, 21);
+            this.lblArvLender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblArvLender.Name = "lblArvLender";
-            this.lblArvLender.Size = new System.Drawing.Size(62, 18);
+            this.lblArvLender.Size = new System.Drawing.Size(41, 12);
             this.lblArvLender.TabIndex = 89;
             this.lblArvLender.Tag = "ArvBoxTitle";
             this.lblArvLender.Text = "借阅人";
@@ -404,10 +395,10 @@
             // lblArvTitle
             // 
             this.lblArvTitle.AutoSize = true;
-            this.lblArvTitle.Location = new System.Drawing.Point(20, 32);
-            this.lblArvTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblArvTitle.Location = new System.Drawing.Point(13, 21);
+            this.lblArvTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblArvTitle.Name = "lblArvTitle";
-            this.lblArvTitle.Size = new System.Drawing.Size(80, 18);
+            this.lblArvTitle.Size = new System.Drawing.Size(53, 12);
             this.lblArvTitle.TabIndex = 88;
             this.lblArvTitle.Tag = "ArvTitle";
             this.lblArvTitle.Text = "档案名称";
@@ -425,107 +416,96 @@
             this.groupControl1.Controls.Add(this.txtReturner);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl1.Location = new System.Drawing.Point(0, 900);
-            this.groupControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupControl1.Location = new System.Drawing.Point(0, 600);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1880, 120);
+            this.groupControl1.Size = new System.Drawing.Size(1253, 80);
             this.groupControl1.TabIndex = 73;
             this.groupControl1.Text = "归还登记";
             // 
             // memoEdit1
             // 
-            this.memoEdit1.Location = new System.Drawing.Point(1280, 36);
-            this.memoEdit1.Margin = new System.Windows.Forms.Padding(4);
+            this.memoEdit1.Location = new System.Drawing.Point(853, 24);
             this.memoEdit1.MenuManager = this.barManager1;
             this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(582, 76);
+            this.memoEdit1.Size = new System.Drawing.Size(388, 51);
             this.memoEdit1.TabIndex = 13;
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(1220, 62);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl5.Location = new System.Drawing.Point(813, 41);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(36, 22);
+            this.labelControl5.Size = new System.Drawing.Size(24, 14);
             this.labelControl5.TabIndex = 9;
             this.labelControl5.Text = "备注";
             // 
             // cbxUnit
             // 
-            this.cbxUnit.Location = new System.Drawing.Point(386, 57);
-            this.cbxUnit.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxUnit.Location = new System.Drawing.Point(257, 38);
             this.cbxUnit.MenuManager = this.barManager1;
             this.cbxUnit.Name = "cbxUnit";
             this.cbxUnit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbxUnit.Size = new System.Drawing.Size(150, 28);
+            this.cbxUnit.Size = new System.Drawing.Size(100, 20);
             this.cbxUnit.TabIndex = 8;
             // 
             // txtAdmin
             // 
-            this.txtAdmin.Location = new System.Drawing.Point(1012, 57);
-            this.txtAdmin.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAdmin.Location = new System.Drawing.Point(675, 38);
             this.txtAdmin.MenuManager = this.barManager1;
             this.txtAdmin.Name = "txtAdmin";
-            this.txtAdmin.Size = new System.Drawing.Size(150, 28);
+            this.txtAdmin.Size = new System.Drawing.Size(100, 20);
             this.txtAdmin.TabIndex = 7;
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(932, 62);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl4.Location = new System.Drawing.Point(621, 41);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(54, 22);
+            this.labelControl4.Size = new System.Drawing.Size(36, 14);
             this.labelControl4.TabIndex = 6;
             this.labelControl4.Text = "经办人";
             // 
             // dtReturnDate
             // 
             this.dtReturnDate.EditValue = null;
-            this.dtReturnDate.Location = new System.Drawing.Point(699, 57);
-            this.dtReturnDate.Margin = new System.Windows.Forms.Padding(4);
+            this.dtReturnDate.Location = new System.Drawing.Point(466, 38);
             this.dtReturnDate.MenuManager = this.barManager1;
             this.dtReturnDate.Name = "dtReturnDate";
             this.dtReturnDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtReturnDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtReturnDate.Size = new System.Drawing.Size(168, 28);
+            this.dtReturnDate.Size = new System.Drawing.Size(112, 20);
             this.dtReturnDate.TabIndex = 5;
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(612, 57);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl3.Location = new System.Drawing.Point(408, 38);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(72, 22);
+            this.labelControl3.Size = new System.Drawing.Size(48, 14);
             this.labelControl3.TabIndex = 4;
             this.labelControl3.Text = "归还时间";
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(303, 57);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl2.Location = new System.Drawing.Point(202, 38);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(72, 22);
+            this.labelControl2.Size = new System.Drawing.Size(48, 14);
             this.labelControl2.TabIndex = 2;
             this.labelControl2.Text = "所属部门";
             // 
             // txtReturner
             // 
-            this.txtReturner.Location = new System.Drawing.Point(82, 52);
-            this.txtReturner.Margin = new System.Windows.Forms.Padding(4);
+            this.txtReturner.Location = new System.Drawing.Point(55, 35);
             this.txtReturner.MenuManager = this.barManager1;
             this.txtReturner.Name = "txtReturner";
-            this.txtReturner.Size = new System.Drawing.Size(150, 28);
+            this.txtReturner.Size = new System.Drawing.Size(100, 20);
             this.txtReturner.TabIndex = 1;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(20, 57);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl1.Location = new System.Drawing.Point(13, 38);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(54, 22);
+            this.labelControl1.Size = new System.Drawing.Size(36, 14);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "归还人";
             // 
@@ -533,24 +513,23 @@
             // 
             this.groupControl2.Controls.Add(this.gcArvToReturn);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl2.Location = new System.Drawing.Point(0, 640);
-            this.groupControl2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupControl2.Location = new System.Drawing.Point(0, 427);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1880, 260);
+            this.groupControl2.Size = new System.Drawing.Size(1253, 173);
             this.groupControl2.TabIndex = 74;
             this.groupControl2.Text = "待归还档案";
             // 
             // gcArvToReturn
             // 
             this.gcArvToReturn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcArvToReturn.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gcArvToReturn.Location = new System.Drawing.Point(3, 33);
+            this.gcArvToReturn.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.gcArvToReturn.Location = new System.Drawing.Point(2, 21);
             this.gcArvToReturn.MainView = this.gvArvToReturn;
-            this.gcArvToReturn.Margin = new System.Windows.Forms.Padding(6);
+            this.gcArvToReturn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gcArvToReturn.Name = "gcArvToReturn";
             this.gcArvToReturn.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnRemove});
-            this.gcArvToReturn.Size = new System.Drawing.Size(1874, 224);
+            this.gcArvToReturn.Size = new System.Drawing.Size(1249, 150);
             this.gcArvToReturn.TabIndex = 1;
             this.gcArvToReturn.Tag = "1";
             this.gcArvToReturn.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -584,24 +563,23 @@
             // 
             this.groupControl3.Controls.Add(this.gcArvInfo);
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl3.Location = new System.Drawing.Point(0, 133);
-            this.groupControl3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupControl3.Location = new System.Drawing.Point(0, 89);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(1880, 507);
+            this.groupControl3.Size = new System.Drawing.Size(1253, 338);
             this.groupControl3.TabIndex = 75;
             this.groupControl3.Text = "档案明细";
             // 
             // gcArvInfo
             // 
             this.gcArvInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcArvInfo.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gcArvInfo.Location = new System.Drawing.Point(3, 33);
+            this.gcArvInfo.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.gcArvInfo.Location = new System.Drawing.Point(2, 21);
             this.gcArvInfo.MainView = this.gvArvInfo;
-            this.gcArvInfo.Margin = new System.Windows.Forms.Padding(6);
+            this.gcArvInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gcArvInfo.Name = "gcArvInfo";
             this.gcArvInfo.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.controlButtons});
-            this.gcArvInfo.Size = new System.Drawing.Size(1874, 471);
+            this.gcArvInfo.Size = new System.Drawing.Size(1249, 315);
             this.gcArvInfo.TabIndex = 1;
             this.gcArvInfo.Tag = "1";
             this.gcArvInfo.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -640,9 +618,9 @@
             // 
             // FormOPArvReturn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1880, 1020);
+            this.ClientSize = new System.Drawing.Size(1253, 680);
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
@@ -651,7 +629,6 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormOPArvReturn";
             this.Text = "FormOPArvReturn";
             this.Load += new System.EventHandler(this.FormOPArvReturn_Load);

@@ -42,10 +42,10 @@ namespace ZY.EntityFrameWork.Core.Model.Dto
         // </summary>
         public string ReturnExecuter { get; set; }
 
-        [Display(Name = "档案编号")]
-        /// <summary>
-        /// 档案编号
-        /// </summary>
-        public string ArvID { get; set; }
+        //[Display(Name = "档案编号")]
+        ///// <summary>
+        ///// 档案编号
+        ///// </summary>
+        //public string ArvID { get; set; }
     }
 }

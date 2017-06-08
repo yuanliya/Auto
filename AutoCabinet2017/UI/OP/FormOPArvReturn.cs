@@ -1,5 +1,4 @@
-﻿using AutoCabinet2017.Helper;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,9 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using ZY.EntityFrameWork.Caller;
 using ZY.EntityFrameWork.Caller.Facade;
 using ZY.EntityFrameWork.Core.Model.Dto;
+
+using AutoCabinet2017.Helper;
+
+using NJUST.AUTO06.Utility;
 
 namespace AutoCabinet2017.UI.OP
 {
@@ -40,7 +44,14 @@ namespace AutoCabinet2017.UI.OP
             // 默认隐藏“高级搜索”
             panelSearch.Visible = false;
 
-            gcArvInfo.DataSource = CallerFactory.Instance.GetService<IArvOpService>().GetLendInfo();
+            try
+            {
+                gcArvInfo.DataSource = CallerFactory.Instance.GetService<IArvOpService>().GetLendInfo();
+            }
+            catch(Exception ex)
+            {
+                MessageUtil.ShowError(ex.Message);
+            }
         }
 
         /// <summary>
@@ -60,9 +71,22 @@ namespace AutoCabinet2017.UI.OP
             }              
         }
 
+        private ArvReturnInfoDto InitReturnInfo()
+        {
+            ArvReturnInfoDto dto = new ArvReturnInfoDto
+            {
+                ReturnDate = dtReturnDate.DateTime,
+                Returner = txtReturner.Text,
+                ReturnerDept = cbxUnit.Text,
+                ReturnExecuter = txtAdmin.Text
+            };
+            
+            return dto;
+        }
+
         private void toolReturn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            CallerFactory.Instance.GetService<IArvOpService>().ArvReturn(InitReturnInfo(), gcArvInfo.DataSource as List<ArvLendInfoDto>);
         }
     }
 }

@@ -30,17 +30,17 @@ namespace ZY.EntityFrameWork.Core.Model.Entity
         /// <summary>
         /// 档案信息
         /// </summary>
-        public ArchiveInfo ArchiveInfo { get; set; }
+        public virtual ArchiveInfo ArchiveInfo { get; set; }
 
         /// <summary>
         /// 档案借阅信息
         /// </summary>
-        public ArvLendInfo ArvLend { get; set; }
+        public virtual ArvLendInfo ArvLend { get; set; }
 
         /// <summary>
         /// 档案归还信息
         /// </summary>
-        public ArvReturnInfo ArvReturn { get; set; }
+        public virtual ArvReturnInfo ArvReturn { get; set; }
 
         // 属性要设为IsConcurrencyToken().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity); 
         // 时间戳作为乐观锁

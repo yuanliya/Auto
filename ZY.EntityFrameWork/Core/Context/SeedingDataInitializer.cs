@@ -13,7 +13,7 @@ namespace ZY.EntityFrameWork.Core.Context
     // DropCreateDatabaseIfModelChanges--仅在模型自数据库创建后发生更改时删除数据库、重新创建数据库并选择重新设置数据库的种子
     // DropCreateDatabaseAlways--首次在应用程序域中使用上下文时，重新创建数据库并可以选择重新设置数据库的种子。若要设置数据库的种子，创建派生类并重写 Seed 方法。
     // CreateDatabaseIfNotExists--在没有数据库时创建一个新的数据库
-    public class SeedingDataInitializer : DropCreateDatabaseIfModelChanges<HZKContext> //DropCreateDatabaseAlways<HZKContext> //   // DropCreateDatabaseAlways<HZKContext> //   
+    public class SeedingDataInitializer : DropCreateDatabaseIfModelChanges<HZKContext> //DropCreateDatabaseAlways<HZKContext> //  
     {
         ///// <summary>
         ///// 打开Xml文件

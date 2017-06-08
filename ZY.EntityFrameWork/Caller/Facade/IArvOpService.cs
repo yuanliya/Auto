@@ -159,7 +159,7 @@ namespace ZY.EntityFrameWork.Caller.Facade
 
         List<ArvLendInfoDto> GetLendInfo();
 
-        int ArvReturn(ArvReturnInfoDto returnInfo, List<ArchiveInfoDto> arvInfos);
+        int ArvReturn(ArvReturnInfoDto returnInfo, List<ArvLendInfoDto> arvInfos);
 
         #endregion
 

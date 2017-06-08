@@ -58,9 +58,9 @@ namespace AutoCabinet2017.UI.OP
             gcArvToLend.DataSource = arvToLendList;
 
             // ID列不可见
-            string[] cols = new string[] { "ID" };
-            GridControlHelper.Instance.SetColumnInvisible(gvArvInfo, cols);
-            GridControlHelper.Instance.SetColumnInvisible(gvArvToLend, cols);
+            //string[] cols = new string[] { "ID" };
+            //GridControlHelper.Instance.SetColumnInvisible(gvArvInfo, cols);
+            //GridControlHelper.Instance.SetColumnInvisible(gvArvToLend, cols);
 
             // 为表格加入控制列
             GridControlHelper.Instance.AddControlButton(gvArvInfo, btnPreview, gvArvInfo.Columns.Count);  // 档案信息表的预览列

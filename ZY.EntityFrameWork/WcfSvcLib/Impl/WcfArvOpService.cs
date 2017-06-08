@@ -162,9 +162,9 @@ namespace ZY.EntityFrameWork.WcfSvcLib.Impl
             return baseArvOpService.GetArvLended().MapTo<List<ArchiveInfoDto>>();
         }
 
-        public int ArvReturn(ArvReturnInfoDto returnInfo, List<ArchiveInfoDto> arvInfos)
+        public int ArvReturn(ArvReturnInfoDto returnInfo, List<ArvLendInfoDto> arvInfos)
         {
-            List<ArchiveInfo> infos = arvInfos.MapTo<List<ArchiveInfo>>();
+            List<ArvLendReturn> infos = arvInfos.MapTo<List<ArvLendReturn>>();
             ArvReturnInfo info = returnInfo.MapTo<ArvReturnInfo>();
             return baseArvOpService.ArvReturn(info, infos);
         }

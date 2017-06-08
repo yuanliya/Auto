@@ -414,20 +414,47 @@ namespace ZY.EntityFrameWork.Core.Services
         /// <param name="returnInfo">归还信息实体</param>
         /// <param name="arvInfos">归还有关的档案信息实体</param>
         /// <returns></returns>
-        public int ArvReturn(ArvReturnInfo returnInfo, List<ArchiveInfo> arvInfos)
+        public int ArvReturn(ArvReturnInfo returnInfo, List<ArvLendReturn> arvInfos)
         {
             arvInfos.ForEach(q =>
             {
                 // 更新档案状态
-                q.ArvStatus = "在库";
-                arvRepository.Update(q, false);
-
-                // 更新归还记录表
-                ArvReturnInfo info = returnInfo;          
-                returnRepository.Insert(returnInfo, false);
+                ArvLendReturn item = arvLendReturnRepository.GetByKey(q.ID);
+                item.ArvReturn = returnInfo;
+                item.ArchiveInfo.ArvStatus = "在库";
+                arvLendReturnRepository.Update(item, false);
             });
 
             return Context.Commit();
+
+            //try
+            //{
+            //    foreach (ArvLendReturn item in arvInfos)
+            //    {
+            //        ArvLendReturn it = arvLendReturnRepository.GetByKey(item.ID);
+            //        it.ArvReturn = returnInfo;
+            //        it.ReturnID = returnInfo.ID;
+            //       // it.ArchiveInfo.ArvStatus = "在库";
+            //        arvLendReturnRepository.Update(it, false);
+            //    }
+
+            //    Context.Commit();
+            //}
+            //catch(Exception ex)
+            //{
+                
+            //}
+
+            //return 0;
+            //foreach(ArvLendReturn item in arvInfos)
+            //{
+            //    ArvLendReturn it = arvLendReturnRepository.GetByKey(item.ID);
+            //    it.ArvReturn = returnInfo;
+            //    it.ArchiveInfo.ArvStatus = "在库";
+            //    arvLendReturnRepository.Update(it, false);
+            //}
+
+            //return Context.Commit();
         }
 
         #endregion

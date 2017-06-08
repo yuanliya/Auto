@@ -55,6 +55,6 @@ namespace ZY.EntityFrameWork.Core.Model.Entity
         /// <summary>
         /// 档案归还信息与档案借阅信息是1：1关系
         /// </summary>
-        public virtual ArvReturnInfo ArvReturnInfo { get; set; }
+        //public virtual ArvReturnInfo ArvReturnInfo { get; set; }
     }
 }
